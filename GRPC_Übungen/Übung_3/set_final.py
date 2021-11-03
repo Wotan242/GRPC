@@ -9,7 +9,7 @@ client = (
     .set_os('NX-OS')
     .set_secure_from_file('./certs/self_sign2048.pem')
     .set_ssl_target_override()
-    .set_call_authentication('admin', '1234Qwer')
+    .set_call_authentication('student', '1234QWer')
     .construct()
 )
 
