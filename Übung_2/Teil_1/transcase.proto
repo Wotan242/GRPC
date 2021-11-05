@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service SetCase {
+  rpc UpperCase(Input) returns (Output);
+  rpc LowerCase(Input) returns (Output);
+}
+
+message Input {
+	string text_in = 1; 
+}
+
+message Output {
+	string text_out  = 1;
+}
