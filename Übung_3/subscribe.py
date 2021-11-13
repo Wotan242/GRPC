@@ -21,7 +21,7 @@ client = (
 
 
 
-sub_path = client.parse_xpath_to_gnmi_path("/Cisco-NX-OS-device:System/intf-items/phys-items/PhysIf-list[id='eth1/49']/dbgEtherStats-items/pkts")
+sub_path = client.parse_xpath_to_gnmi_path("/Cisco-NX-OS-device:System/intf-items/phys-items/PhysIf-list[id='eth1/1']/dbgEtherStats-items/pkts")
 
 subscription_obj = proto.gnmi_pb2.Subscription()
 subscription_obj.path.CopyFrom(sub_path)
